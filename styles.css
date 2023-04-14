@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(216, 253, 241);
+    z-index: 0;    
+}
+
+.container-fluid{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator{
+    width: max-content;
+    background-color: rgb(0, 13, 25);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.displayer{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 65px;
+    width: 315px;
+    height: fit-content;
+    background-color: rgba(167, 255, 200, 0.858);
+    border: none;
+    outline: 0;
+    margin: 15px;
+    text-align: right;
+    overflow: hidden;
+    -webkit-text-fill-color: #0000009f;
+    cursor:not-allowed;
+    text-overflow:ellipsis;
+  
+}
+
+.button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    outline: 0;
+    margin: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+    font-size: 30px;
+    background-color: rgba(75, 75, 75, 0.492);
+    box-shadow: -4px -5px 15px rgba(209, 248, 248, 0.302) , 8px 5px 4px 3px rgba(0, 12, 26,0.1);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgba(75, 75, 75, 0.042);
+    transition: ease-in 600ms;
+}
+
+.Backspace:hover{
+    background-color: rgba(255, 0, 0, 0.206);
+}
+
+.AC:hover{
+    background-color: rgba(255, 0, 0, 0.206);
+}
+
+.AC,.Backspace{
+    background-color: rgba(255, 0, 0, 0.511);
+    color: rgb(255, 255, 255);
+    box-shadow: -4px -5px 15px rgba(221, 4, 4, 0.475) , 8px 5px 4px 3px rgba(0, 12, 26,0.1);
+}
+
+.operator:hover{
+    background-color: rgba(0, 81, 255, 0.35);
+}
+
+.operator{
+    background-color: rgba(0, 81, 255, 0.597);
+    box-shadow: -4px -5px 15px rgba(4, 73, 221, 0.475) , 8px 5px 4px 3px rgba(0, 12, 26,0.1);
+}
+
+.SQRT{
+    font-size: 26px;
+}
